@@ -90,3 +90,5 @@ Add these to **Settings → Secrets and variables → Actions** before the first
 ## Chrome Web Store
 
 For detailed steps on setting up the Chrome Web Store listing, including the initial manual publish and obtaining API credentials, refer to [store/listing.md](../../store/listing.md). After the initial setup, `bun run release` handles the full publish cycle.
+
+`docs/` is deployed as the project's GitHub Pages site at `erclx.github.io/caret`, and `docs/privacy` is the exact URL registered as the store's privacy policy in `store/listing.md`. Restructuring or relocating `docs/index.md` or `docs/privacy.md` breaks the live site and the store listing.
