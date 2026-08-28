@@ -5,7 +5,17 @@ description: Fixtures and verification checklists for behavior that automated te
 
 # Manual testing
 
-The `manual/` folder holds fixtures and step-by-step verification checklists for features that automated tests do not cover end-to-end. Each feature area has its own subfolder with a `verify.md` and any fixture files it needs.
+## Overview
+
+Owns `manual/`: fixtures and step-by-step verification checklists for behavior that automated tests do not cover end-to-end. Each feature area has its own subfolder with a `verify.md` and any fixture files it needs.
+
+## Layout
+
+- `manual/import-export/` owns fixtures and the checklist for the data export/import round-trip
+- `manual/github-sync/` owns the checklist for syncing prompts from a remote repository
+- `manual/sidepanel/` owns the checklist for prompt library UI flows
+- `manual/trigger/` owns the checklist for content-script injection and per-site trigger config
+- `manual/dark-mode/` owns the checklist for dark theme rendering across surfaces
 
 ## Import/export
 

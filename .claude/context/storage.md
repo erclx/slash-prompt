@@ -5,7 +5,9 @@ description: chrome.storage.local shape, JSON export/import, dev seeding, and ex
 
 # Storage and IO
 
-Two keys are written to `chrome.storage.local`: `prompts` and `settings`. Whether the `prompts` key has ever been written determines the onboarding empty state. The wrapper in `src/shared/utils/storage.ts` exposes typed async getters, setters, and a subscription helper that fans storage events out to the React hooks.
+## Overview
+
+Owns the `chrome.storage.local` shape, JSON export/import, dev seeding, and validation of data crossing an external boundary. Two keys are written: `prompts` and `settings`. The wrapper in `src/shared/utils/storage.ts` exposes typed async getters, setters, and a subscription helper that fans storage events out to the React hooks.
 
 ## Storage shape
 

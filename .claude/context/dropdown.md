@@ -5,7 +5,13 @@ description: Command palette positioning, anchoring, and the shared filtering st
 
 # Dropdown
 
-The in-chat command palette. Implementation in `src/content/views/dropdown/`. Filtering uses the shared `src/shared/utils/fuzzy.ts` utility, which is also consumed by the sidepanel list.
+## Overview
+
+Owns the in-chat command palette: positioning, anchoring, and the filtering strategy. Filtering uses the shared `src/shared/utils/fuzzy.ts` utility, which the sidepanel list also consumes.
+
+## Layout
+
+- `src/content/views/dropdown/` owns the command palette component and its positioning logic
 
 ## Command palette style, above input
 

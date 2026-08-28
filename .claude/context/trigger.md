@@ -5,7 +5,15 @@ description: Per-site input adapters, trigger-symbol activation, and keyboard na
 
 # Trigger detection
 
-The content script watches each target site's chat input for the configured trigger symbol and opens the dropdown when activation conditions match. Files live under `src/content/input/` (detector, adapters, site-observer) and `src/content/hooks/use-input-detection.ts`.
+## Overview
+
+Owns per-site trigger-symbol activation and keyboard navigation in the content script. The content script watches each target site's chat input for the configured trigger symbol and opens the dropdown when activation conditions match.
+
+## Layout
+
+- `src/content/input/` owns the detector, per-site adapters, and the site observer
+
+Also uses `src/content/hooks/use-input-detection.ts`.
 
 ## Default symbol: `>`
 

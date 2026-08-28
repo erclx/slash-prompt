@@ -5,7 +5,9 @@ description: Read-only sync flow with three-way diff, state machine, and the opt
 
 # GitHub sync
 
-Read-only. GitHub is the source of truth, and the extension never writes back. Sync is always user-initiated from the sync button in the sidepanel GitHub view.
+## Overview
+
+Owns the read-only pull from a GitHub repository into storage. GitHub is the source of truth, and the extension never writes back. Sync is always user-initiated from the sync button in the sidepanel GitHub view.
 
 Files: `src/shared/utils/github.ts` (pure: fetch, testConnection, computeDiff), `src/shared/hooks/use-github-sync.ts` (state machine), `src/shared/components/github-view.tsx` (sidepanel UI), `src/options/github-section.tsx` (credentials form).
 

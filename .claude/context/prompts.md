@@ -5,7 +5,9 @@ description: CRUD hook, library coordinator, list/form composition, and the onbo
 
 # Prompt library
 
-The browsable, editable side of the extension. Files: `src/shared/hooks/use-prompts.ts`, `src/shared/components/prompt-library.tsx`, `src/shared/components/prompt-list.tsx`, `src/shared/components/prompt-form.tsx`. See [forms](forms.md) for validation behavior and [storage](storage.md) for the underlying schema.
+## Overview
+
+Owns the browsable, editable side of the extension: the CRUD hook, the library coordinator, and list/form composition. Files: `src/shared/hooks/use-prompts.ts`, `src/shared/components/prompt-library.tsx`, `src/shared/components/prompt-list.tsx`, `src/shared/components/prompt-form.tsx`. See [forms](forms.md) for validation behavior and [storage](storage.md) for the underlying schema.
 
 ## `usePrompts` hook
 
