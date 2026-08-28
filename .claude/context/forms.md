@@ -5,7 +5,9 @@ description: Validation timing pattern, post-save navigation, and the single-`us
 
 # Forms
 
-A pattern, not a single file. The same validation and save-feedback shape repeats in `src/shared/components/prompt-form.tsx`, `src/options/site-config-section.tsx`, and `src/options/github-section.tsx`.
+## Overview
+
+Owns the validation and save-feedback pattern shared across every form in the extension, not a single file. The same shape repeats in `src/shared/components/prompt-form.tsx`, `src/options/site-config-section.tsx`, and `src/options/github-section.tsx`, each owned by its own domain entry.
 
 ## Validation timing: blur-first, then live
 

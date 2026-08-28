@@ -5,6 +5,10 @@ description: Local setup, available bun scripts, project structure, and environm
 
 # Development
 
+## Overview
+
+Owns the local dev workflow: environment setup, the bun script surface, and the environment variables GitHub sync needs during development. Domain code lives in `src/`. Each domain's own context entry documents its layout, so this entry indexes how to run, build, and test the project rather than what each entry point does.
+
 ## Requirements
 
 - [Bun](https://bun.sh) installed globally
@@ -59,42 +63,6 @@ Generates a production build and a zip in `release/`.
 - `bun run release`: bump version and changelog, tag, and push to trigger the release workflow
 - `bun run clean`: remove `node_modules` and temporary files
 - `bun run update`: update dependencies and run full verification
-
-## Project structure
-
-```text
-src/
-├── background/      ← Background service worker
-│   └── index.ts
-├── content/         ← Content scripts injected into target sites
-│   ├── main.tsx
-│   ├── hooks/       ← React hooks for content scripts
-│   ├── input/       ← Input detection and adapters
-│   └── views/       ← Dropdown command palette
-│       ├── app.tsx
-│       └── dropdown/
-├── options/         ← Settings page for trigger config, data, and GitHub sync
-│   ├── app.tsx      ← Loading gate and section composition
-│   ├── data-section.tsx
-│   ├── github-section.tsx
-│   ├── site-config-section.tsx
-│   ├── index.html
-│   └── main.tsx
-├── popup/           ← Prompt library UI (extension icon)
-│   ├── app.tsx
-│   ├── index.html
-│   └── main.tsx
-├── sidepanel/       ← Prompt library UI (side panel)
-│   ├── app.tsx
-│   ├── index.html
-│   └── main.tsx
-└── shared/          ← Hooks, types, components, utilities
-    ├── components/  ← Reusable React components
-    │   └── ui/      ← UI primitives (button, input, etc.)
-    ├── hooks/
-    ├── types/
-    └── utils/
-```
 
 ## Environment variables
 

@@ -5,7 +5,17 @@ description: Fixtures and verification checklists for behavior that automated te
 
 # Manual testing
 
-The `manual/` folder holds fixtures and step-by-step verification checklists for features that automated tests do not cover end-to-end. Each feature area has its own subfolder with a `verify.md` and any fixture files it needs.
+## Overview
+
+Owns `manual/`: fixtures and step-by-step verification checklists for behavior that automated tests do not cover end-to-end. Each feature area has its own subfolder with a `verify.md` and any fixture files it needs.
+
+## Layout
+
+- `manual/import-export/` owns fixtures and the checklist for the data export/import round-trip
+- `manual/github-sync/` owns fixtures and the checklist for syncing prompts from a remote repository
+- `manual/sidepanel/` owns the checklist for prompt library UI flows
+- `manual/trigger/` owns the checklist for content-script injection and per-site trigger config
+- `manual/dark-mode/` owns the checklist for dark theme rendering across surfaces
 
 ## Import/export
 
@@ -23,7 +33,7 @@ See [manual/import-export/verify.md](../../manual/import-export/verify.md) for t
 
 ## GitHub sync
 
-`manual/github-sync/` covers syncing prompts from a remote GitHub repository, the sidepanel GitHub tab, and options page validation: connection dot reset on field edits, save blocking before valid input, and branch and snippets path inline errors. No extra fixture files are needed. This repo's own `.claude/snippets/` folder is the fixture set. Configure the extension to point at it and follow the checklist.
+`manual/github-sync/` covers syncing prompts from a remote GitHub repository, the sidepanel GitHub tab, and options page validation: connection dot reset on field edits, save blocking before valid input, and branch and snippets path inline errors. `manual/github-sync/fixtures/` holds the fixture set the checklist points the extension at.
 
 See [manual/github-sync/verify.md](../../manual/github-sync/verify.md) for the full checklist.
 
